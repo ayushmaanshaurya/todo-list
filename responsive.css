@@ -1,0 +1,100 @@
+@media (max-width: 768px) {
+    .container {
+        border-radius: 0;
+    }
+    
+    body {
+        padding: 0;
+    }
+    
+    .todo-app {
+        padding: 15px;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .input-section,
+    .filters {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-actions {
+        flex-direction: column;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .todo-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .todo-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .todo-app {
+        padding: 10px;
+    }
+    
+    .input-section,
+    .filters {
+        padding: 15px;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .stat-item {
+        padding: 5px;
+    }
+    
+    .todo-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .modal-content {
+        margin: 5% auto;
+        width: 98%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .input-section {
+        grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    }
+    
+    .filters {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
